@@ -13,12 +13,12 @@ withDefaults(defineProps<ContainerHeaderProps>(), {
 <template>
   <div class="header__container">
     <h2 class="header__title">{{ title }}</h2>
-    <span class="header__desc">
-      {{ description }}
-    </span>
+    <div v-if="description" class="header__desc">
+      <span v-html="description" />
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@import "./ContainerHeader.scss";
+@import "./style.scss";
 </style>

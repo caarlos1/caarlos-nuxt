@@ -1,7 +1,12 @@
 :root {
-  --color-text: #2c3e50;
-  --color-background: #ffffff;
-  --color-primary: #605bff;
+  --background-color: #ffffff;
+  --text-color: #2c3e50;
+
+  --primary-color: hsl(209, 98%, 53%);
+  --primary-color-2: hsl(209, 98%, 43%);
+  --scondary-color: hsl(218, 8%, 20%);
+  --scondary-color-2: hsl(218, 8%, 15%);
+
   --section-gap: 160px;
 }
 
@@ -22,8 +27,8 @@ html {
 body {
   min-height: 100vh;
   max-width: 100vw;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--text-color);
+  background: var(--background-color);
   transition: color 0.5s, background-color 0.5s;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -38,7 +43,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--text-color);
 }
 
 a:hover {
@@ -51,5 +56,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 800;
+}
+
+/* Util */
+
+.highlight {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 0 0.4em 0 0.4em;
+  font-weight: bold;
 }
