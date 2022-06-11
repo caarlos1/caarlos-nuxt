@@ -1,0 +1,76 @@
+.block__container {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block__slot {
+  width: 100%;
+  max-width: 1320px;
+}
+
+.custom--background {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--background-color);
+
+  &.color {
+    background-color: var(--background-color);
+
+    &-1 {
+      background-color: var(--background-color);
+    }
+
+    &-2 {
+      background-color: var(--background-color-2);
+    }
+  }
+
+  &.mask {
+    &-1 {
+      background-image: url("./svg/mask_01.svg");
+      background-position: bottom;
+    }
+
+    &-2 {
+      background-image: url("./svg/mask_02.svg");
+      background-position: bottom;
+
+      &t,
+      &t1 {
+        background-image: url("./svg/mask_02_top_1.svg");
+      }
+
+      &t2 {
+        background-image: url("./svg/mask_02_top_2.svg");
+      }
+    }
+
+    &-3 {
+      background-image: url("./svg/mask_03.svg");
+      background-position: bottom;
+
+      &t,
+      &t1 {
+        background-image: url("./svg/mask_03_top_1.svg");
+      }
+
+      &t2 {
+        background-image: url("./svg/mask_03_top_2.svg");
+      }
+    }
+
+    &-4 {
+      background-image: url("./svg/mask_04.svg");
+      background-position: bottom;
+
+      &t,
+      &t1 {
+        background-image: url("./svg/mask_04_top.svg");
+      }
+    }
+  }
+}
