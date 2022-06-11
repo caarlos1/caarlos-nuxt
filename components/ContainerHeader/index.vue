@@ -12,7 +12,7 @@ withDefaults(defineProps<ContainerHeaderProps>(), {
 
 <template>
   <div class="header__container">
-    <h2 class="header__title">{{ title }}</h2>
+    <h2 class="header__title" v-html="title"></h2>
     <div v-if="description" class="header__desc">
       <span v-html="description" />
     </div>
