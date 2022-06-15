@@ -11,6 +11,12 @@
   max-width: 1320px;
 }
 
+.cover {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
 .custom--background {
   background-size: 100%;
   background-repeat: no-repeat;

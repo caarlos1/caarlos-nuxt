@@ -1,15 +1,22 @@
 <script setup lang="ts">
 export interface ContainerBlockProps {
   bg?: string;
+  cover?: boolean;
 }
 
-withDefaults(defineProps<ContainerBlockProps>(), {
+const props = withDefaults(defineProps<ContainerBlockProps>(), {
   bg: "",
+  cover: true,
+});
+
+const containerClass = computed(() => {
+  const { bg, cover } = props;
+  return { ["custom--background " + bg]: bg, cover };
 });
 </script>
 
 <template>
-  <div class="block__container" :class="{ ['custom--background ' + bg]: bg }">
+  <div class="block__container" :class="containerClass">
     <div class="block__slot">
       <slot></slot>
     </div>
