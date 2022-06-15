@@ -1,22 +1,17 @@
 :root {
   --text-color: #ebebeb;
-  
   --background-color: #20232a;
   --background-color-2: #15181e;
-
   --primary-color: #128bfc;
   --primary-color-2: #0271d9;
-
   --secondary-color: #2f3237;
   --secondary-color-2: #232529;
-
   --section-gap: 160px;
 }
 
 // @media (prefers-color-scheme: light) {
 //   :root {
 //     --text-color: #2c3e50;
-
 //     --background-color: #eee;
 //     --background-color-2: #dedede;
 //   }
@@ -59,7 +54,11 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary);
+  color: var(--primary-color);
+
+  &.hi {
+    color: var(--text-color);
+  }
 }
 
 h1,
