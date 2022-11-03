@@ -14,6 +14,7 @@ useHead({
     <ContainerHeader
       :title="$t('fold.title')"
       :description="$t('fold.description')"
+      title-is="h1"
     />
     <ContainerText :text="$t('fold.text')" text-align="center" />
   </ContainerBlock>
