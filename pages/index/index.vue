@@ -1,22 +1,20 @@
 <script setup lang="ts">
-import TEXT from "./messages.json";
-import * as Util from "@/util";
-
-const $t = Util.translationUtil(TEXT);
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 useHead({
-  title: $t("head.title"),
+  title: t("index.head.title"),
 });
 </script>
 
 <template>
   <ContainerBlock bg="mask-2t color">
     <ContainerHeader
-      :title="$t('fold.title')"
-      :description="$t('fold.description')"
+      :title="$t('index.title')"
+      :description="$t('index.description')"
       title-is="h1"
     />
-    <ContainerText :text="$t('fold.text')" text-align="center" />
+    <ContainerText :text="$t('index.footer')" text-align="center" />
   </ContainerBlock>
 </template>
 
