@@ -11,7 +11,11 @@ withDefaults(defineProps<TextBlockProps>(), {
 </script>
 
 <template>
-  <div class="text__container" v-html="text" :class="{ [textAlign]: textAlign }"></div>
+  <div
+    class="text__container"
+    v-html="text"
+    :class="{ [textAlign]: textAlign }"
+  ></div>
 </template>
 
 <style lang="scss" scoped>

@@ -8,7 +8,7 @@ useHead({
 </script>
 
 <template>
-  <ContainerBlock bg="mask-2t color">
+  <ContainerBlock bg="mk-2t color">
     <ContainerHeader
       :title="$t('index.title')"
       :description="$t('index.description')"

@@ -1,81 +1,64 @@
 .block__container {
-  width: 100%;
-  padding: 80px 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.block__slot {
-  width: 100%;
-  max-width: 1320px;
+  @apply bg-color-bg-1 flex flex-col justify-center items-center;
 }
 
 .cover {
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
+  @apply w-full h-screen;
+}
+
+.block__slot {
+  @apply w-full container;
 }
 
 .custom--background {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-color: var(--background-color);
+  @apply bg-no-repeat bg-auto bg-top;
 
   &.color {
-    background-color: var(--background-color);
-
-    &-1 {
-      background-color: var(--background-color);
-    }
+    @apply bg-color-bg-1;
 
     &-2 {
-      background-color: var(--background-color-2);
+      @apply bg-color-bg-2;
     }
   }
 
-  &.mask {
-    &-1 {
-      background-image: url("./svg/mask_01.svg");
-      background-position: bottom;
+  &.mk- {
+    &1 {
+      background-image: url("./svg/m1.svg");
+      @apply bg-bottom;
     }
 
-    &-2 {
-      background-image: url("./svg/mask_02.svg");
-      background-position: bottom;
+    &2 {
+      background-image: url("./svg/m2.svg");
+      @apply bg-bottom;
 
-      &t,
-      &t1 {
-        background-image: url("./svg/mask_02_top_1.svg");
+      &t {
+        background-image: url("./svg/m2t.svg");
       }
 
       &t2 {
-        background-image: url("./svg/mask_02_top_2.svg");
+        background-image: url("./svg/m2t2.svg");
       }
     }
 
-    &-3 {
-      background-image: url("./svg/mask_03.svg");
-      background-position: bottom;
+    &3 {
+      background-image: url("./svg/m3.svg");
+      @apply bg-bottom;
 
-      &t,
-      &t1 {
-        background-image: url("./svg/mask_03_top_1.svg");
+      &t {
+        background-image: url("./svg/m3t.svg");
       }
 
       &t2 {
-        background-image: url("./svg/mask_03_top_2.svg");
+        background-image: url("./svg/m3t2.svg");
       }
     }
 
-    &-4 {
-      background-image: url("./svg/mask_04.svg");
-      background-position: bottom;
+    &4 {
+      background-image: url("./svg/m4.svg");
+      @apply bg-bottom;
 
-      &t,
-      &t1 {
-        background-image: url("./svg/mask_04_top.svg");
+      &t {
+        background-image: url("./svg/m4t.svg");
       }
     }
   }

@@ -20,8 +20,8 @@ withDefaults(defineProps<ContainerHeaderProps>(), {
     <div v-if="description" class="header__desc">
       <span v-html="description" />
     </div>
-  </div>
-</template>
+    </div>
+  </template>
 
 <style lang="scss" scoped>
 @import "./style.scss";

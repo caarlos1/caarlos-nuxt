@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hi {
+  @apply /**/
+  text-color-bg-1
+  bg-color-primary
+  font-bold
+  py-0.5;
+  padding-left: 0.45em;
+  padding-right: 0.45em;
+}
+
+a.hi {
+  @apply hover:text-color-text transition-all;
+}
+
+.small-title {
+  @apply max-sm:text-4xl;
+}
+
+.desk-only {
+  @apply max-sm:hidden;
+}

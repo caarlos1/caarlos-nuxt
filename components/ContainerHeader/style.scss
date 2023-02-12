@@ -1,17 +1,11 @@
 .header__container {
-  text-align: center;
-  padding-top: 4.5rem;
-  padding-bottom: 2.5rem;
-  width: 100%;
+  @apply pb-3 pt-10 w-full text-center text-color-text;
 }
 
 .header__title {
-  font-size: 6rem;
-  line-height: 1.2;
+  @apply text-6xl leading-tight font-bold;
 }
 
 .header__desc {
-  padding-top: 2rem;
-  font-size: 2.25rem;
-  line-height: 1.2;
+  @apply pt-5 text-2xl leading-tight font-normal;
 }
