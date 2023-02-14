@@ -1,3 +1,15 @@
 .text__container {
-  @apply p-4 w-full text-lg text-center text-color-text;
+  @apply p-4 w-full text-lg text-color-text;
+
+  &.center {
+    @apply text-center;
+  }
+
+  &.left {
+    @apply text-left;
+  }
+
+  &.right {
+    @apply text-right;
+  }
 }
