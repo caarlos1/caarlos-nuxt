@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+import ContainerBlock from "@/components/ContainerBlock";
+import ContainerHeader from "@/components/ContainerHeader";
+import ContainerText from "@/components/ContainerText";
 
-useHead({
-  title: t("index.head.title"),
-});
+// import { useI18n } from "vue-i18n";
+// const { t } = useI18n();
+
+// useHead({
+//   title: t("index.head.title"),
+// });
 </script>
 
 <template>

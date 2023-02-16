@@ -1,5 +1,4 @@
 import { mount } from "@vue/test-utils";
-
 import ContainerHeader from "./ContainerHeader.vue";
 
 describe("ContainerHeader - unit", () => {

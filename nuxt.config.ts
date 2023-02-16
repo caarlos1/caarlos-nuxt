@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from "nuxt";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 
@@ -15,9 +14,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  storybook: {
-    // No suport for Nuxt 3
-  },
   vite: {
     plugins: [
       VueI18nVitePlugin({
@@ -33,4 +29,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  components: false
 });

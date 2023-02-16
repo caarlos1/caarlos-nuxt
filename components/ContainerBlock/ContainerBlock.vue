@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+
 export interface ContainerBlockProps {
   bg?: string;
   cover?: boolean;
