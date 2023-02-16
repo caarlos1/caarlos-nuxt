@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import { useHead } from "@vueuse/head";
+
 import ContainerBlock from "@/components/ContainerBlock";
 import ContainerHeader from "@/components/ContainerHeader";
 import ContainerText from "@/components/ContainerText";
 
-// import { useI18n } from "vue-i18n";
-// const { t } = useI18n();
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
-// useHead({
-//   title: t("index.head.title"),
-// });
+useHead({
+  title: t("index.head.title"),
+});
 </script>
 
 <template>
