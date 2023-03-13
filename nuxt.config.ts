@@ -29,5 +29,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  components: false
+  modules: ["nuxt-vitest"],
+  components: false,
 });
