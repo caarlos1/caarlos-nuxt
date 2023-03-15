@@ -15,9 +15,10 @@ withDefaults(defineProps<TextBlockProps>(), {
     class="text__container"
     v-html="text"
     :class="{ [textAlign]: textAlign }"
+    data-testid="text-container"
   ></div>
 </template>
 
 <style lang="scss" scoped>
-@import "./style.scss";
+@import "./TextContainer.scss";
 </style>

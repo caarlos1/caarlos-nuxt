@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-export interface ContainerBlockProps {
+export interface BlockContainerProps {
   bg?: string;
   cover?: boolean;
 }
 
-const props = withDefaults(defineProps<ContainerBlockProps>(), {
+const props = withDefaults(defineProps<BlockContainerProps>(), {
   bg: "",
   cover: true,
 });
@@ -26,5 +26,5 @@ const containerClass = computed(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "./style.scss";
+@import "./BlockContainer.scss";
 </style>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useHead } from "@vueuse/head";
 
-import ContainerBlock from "@/components/ContainerBlock";
-import ContainerHeader from "@/components/ContainerHeader";
-import ContainerText from "@/components/ContainerText";
+import BlockContainer from "@/components/BlockContainer";
+import HeaderContainer from "@/components/HeaderContainer";
+import TextContainer from "@/components/TextContainer";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -14,14 +14,14 @@ useHead({
 </script>
 
 <template>
-  <ContainerBlock bg="mk-2t color">
-    <ContainerHeader
+  <BlockContainer bg="mk-2t color">
+    <HeaderContainer
       :title="$t('index.title')"
       :description="$t('index.description')"
       title-is="h1"
     />
-    <ContainerText :text="$t('index.footer')" text-align="center" />
-  </ContainerBlock>
+    <TextContainer :text="$t('index.footer')" text-align="center" />
+  </BlockContainer>
 </template>
 
 <style lang="scss" scoped></style>
