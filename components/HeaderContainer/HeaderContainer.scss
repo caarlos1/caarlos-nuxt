@@ -1,5 +1,17 @@
 .header__container {
-  @apply pb-3 pt-10 w-full text-center text-color-text;
+  @apply pb-3 pt-10 w-full text-color-text;
+
+  &.center {
+    @apply text-center;
+  }
+
+  &.right {
+    @apply text-right;
+  }
+
+  &.cover {
+    @apply h-full;
+  }
 }
 
 .header__title {
