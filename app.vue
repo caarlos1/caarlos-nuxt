@@ -1,12 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="max-w-full min-h-screen">
     <NuxtPage />
   </div>
 </template>
-
-<style lang="scss" scoped>
-#app {
-  min-height: 100vh;
-  min-width: 100vw;
-}
-</style>
