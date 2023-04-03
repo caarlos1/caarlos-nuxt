@@ -32,6 +32,7 @@
     "vue-i18n": "^9.2.2"
   },
   "dependencies": {
-    "@vueuse/head": "^1.0.26"
+    "@vueuse/head": "^1.0.26",
+    "oh-vue-icons": "^1.0.0-rc3"
   }
 }
