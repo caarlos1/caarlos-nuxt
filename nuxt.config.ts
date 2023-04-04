@@ -5,6 +5,7 @@ import VueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  ssr: false,
   css: ["~/assets/style/global.scss"],
   typescript: {
     shim: true,
