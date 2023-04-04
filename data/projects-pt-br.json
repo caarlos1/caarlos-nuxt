@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Pomodoro Timer",
+    "url": "https://timer.caarlos.com",
+    "description": "Ferramenta desenvolvida em Vue.js visando auxiliar nos meus estudos pessoais, baseado nas necessidades da técnica do Pomodoro.",
+    "tags": [
+      "Vue.js 3",
+      "TypeScript",
+      { "label": "Storybook", "url": "https://storybook-timer.caarlos.com" },
+      "Vite",
+      "Testing Library",
+      "i18n",
+      "SCSS",
+      "Github Actions"
+    ]
+  },
+  {
+    "title": "Calculadora de Folha de Pontos",
+    "url": "https://ponto.caarlos.com",
+    "description": "Ferramenta desenvolvida como um estudo em React.js visando auxiliar no cálculo e previsão de uma jornada diária (CLT), criando um planejamento de batidas de entradas e saídas e horas extra.",
+    "tags": ["React.js", "TypeScript", "Tailwind", "Testing Library"]
+  },
+  {
+    "title": "Esta Página!",
+    "url": "",
+    "image": "https://i.imgur.com/MnjlXZU.jpeg",
+    "description": "Referente ao site que está agora!",
+    "tags": [
+      "Vue.js 3",
+      "Nuxt 2",
+      "TypeScript",
+      "Vite",
+      "Vitest",
+      "Testing Library",
+      "i18n",
+      "Tailwind"
+    ]
+  }
+]
