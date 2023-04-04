@@ -1,0 +1,74 @@
+<script setup lang="ts">
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+import { LaImage } from "oh-vue-icons/icons";
+import { TheCardTag } from "./types";
+
+export interface TheCardProps {
+  title: string;
+  url?: string;
+  description?: string;
+  image?: string;
+  tags?: TheCardTag[];
+}
+
+withDefaults(defineProps<TheCardProps>(), {
+  title: "",
+  url: "#",
+  description: "",
+  image: "",
+  tags: () => [],
+});
+
+addIcons(LaImage);
+
+const handleCardTag = (tag: TheCardTag) => {
+  if (typeof tag == "string") {
+    return tag;
+  } else if (tag?.label) {
+    return tag.label;
+  }
+};
+</script>
+
+<template>
+  <div class="thecard__shadow">
+    <div class="thecard__container">
+      <OhVueIcon name="la-image" scale="5" class="thecard__icon" />
+      <img v-if="image" :src="image" :alt="title" class="thecard__image" />
+    </div>
+
+    <div class="thecard__body">
+      <h2 class="thecard__title">{{ title }}</h2>
+
+      <div v-if="description" class="thecard__description">
+        <p>{{ description }}</p>
+      </div>
+
+      <div v-if="tags.length" class="thecard__taglist">
+        <ul>
+          <li v-for="tag in tags" class="taglist__item">
+            <a
+              v-if="typeof tag !== 'string' && tag.url"
+              :href="tag.url"
+              target="_blank"
+            >
+              {{ handleCardTag(tag) }}
+            </a>
+            <span v-else>
+              {{ handleCardTag(tag) }}
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <a v-if="url" :href="url" class="thecard__access" target="_blank">
+        {{ $t("card.access") }}
+      </a>
+    </div>
+    <div class="thecard__bottom"></div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+@import "./TheCard.scss";
+</style>
