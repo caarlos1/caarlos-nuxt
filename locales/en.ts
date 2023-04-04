@@ -1,12 +1,16 @@
 export default {
-  index: {
-    head: {
-      title: "Carlos Roberto - Front-End Developer",
-    },
+  home: {
+    head: { title: "Carlos Roberto - Front-End Developer" },
     title:
       'Carlos Roberto <br/> <span class="hi small-title">Dev. Front End</span>',
-    description: "One day I finish this page...",
+    description:
+      'From <a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a> to where there is cheese! 🧀',
     footer:
-      'For now that\'s all... <br class="desk-only"/> Access my projects <a href="https://github.com/caarlos1" class="hi" >clicking here!</a>',
+      'Page developed by Carlos Roberto. Contact us by <a href="https://www.linkedin.com/in/carlos-roberto" class="hi" target="_blank">clicking here!</a>',
+    projects: {
+      title: "Projects",
+      description: "Personal tools developed for the world!",
+    },
   },
+  card: { access: "Access" },
 };

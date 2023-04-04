@@ -1,12 +1,16 @@
 export default {
-  index: {
-    head: {
-      title: "Carlos Roberto - Front-End Developer",
-    },
+  home: {
+    head: { title: "Carlos Roberto - Front-End Developer" },
     title:
       'Carlos Roberto <br/> <span class="hi small-title">Dev. Front End</span>',
-    description: "Um dia eu termino esse trem...",
+    description:
+      'De <a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a> até onde houver queijo! 🧀',
     footer:
-      'Por enquanto é só isso... <br class="desk-only"/> Acesse meus projetos <a href="https://github.com/caarlos1" class="hi" >clicando aqui!</a>',
+      'Página desenvolvida por Carlos Roberto. Entre em contato <a href="https://www.linkedin.com/in/carlos-roberto" class="hi" target="_blank">clicando aqui!</a>',
+    projects: {
+      title: "Projetos",
+      description: "Ferramentas pessoais desenvolvidos para o mundo!",
+    },
   },
+  card: { access: "Acessar" },
 };
