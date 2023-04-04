@@ -1,0 +1,45 @@
+.thecard__shadow {
+  @apply w-full shadow-lg text-center;
+}
+
+.thecard__container {
+  @apply aspect-video bg-opacity-50 bg-color-bg-2 rounded-t-3xl flex justify-center items-center;
+}
+
+.thecard__icon {
+  @apply fill-color-text absolute z-0;
+}
+
+.thecard__image {
+  @apply w-full rounded-t-3xl z-10;
+}
+
+.thecard__title {
+  @apply text-4xl max-sm:text-3xl font-bold mb-4;
+}
+
+.thecard__access {
+  @apply font-semibold text-xl hover:text-color-primary-2;
+}
+
+.thecard__body {
+  @apply bg-color-text p-6 flex flex-col;
+}
+
+.thecard__description {
+  @apply mb-4 h-full;
+}
+
+.thecard__taglist {
+  @apply w-full mb-6;
+}
+
+.thecard__taglist {
+  .taglist__item {
+    @apply inline-block text-color-text bg-color-primary p-1 px-3 m-1 rounded-md text-sm;
+  }
+}
+
+.thecard__bottom {
+  @apply bg-color-primary rounded-b-3xl pb-8;
+}

@@ -1,5 +1,5 @@
-import ptBr from "@/locales/pt-br";
-import en from "@/locales/en";
+import ptBr from "~/locales/ptBr.json";
+import en from "~/locales/en.json";
 
 export const i18nConfig = {
   warnHtmlMessage: false,

@@ -8,7 +8,7 @@ export interface BlockContainerProps {
 
 const props = withDefaults(defineProps<BlockContainerProps>(), {
   bg: "",
-  cover: true,
+  cover: false,
 });
 
 const containerClass = computed(() => {
