@@ -1,0 +1,7 @@
+.language__selector {
+  @apply w-full text-color-text text-center;
+}
+
+.language__item {
+  @apply inline m-2 mx-4 hover:text-color-primary-2;
+}
