@@ -9,5 +9,6 @@
       "description": "Personal tools developed for the world!"
     }
   },
-  "card": { "access": "Access" }
+  "card": { "access": "Access" },
+  "locales": { "pt-BR": "Português", "en": "English" }
 }

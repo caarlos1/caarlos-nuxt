@@ -9,5 +9,6 @@
       "description": "Ferramentas pessoais desenvolvidos para o mundo!"
     }
   },
-  "card": { "access": "Acessar" }
+  "card": { "access": "Acessar" },
+  "locales": { "pt-BR": "Português", "en": "English" }
 }
