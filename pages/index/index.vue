@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useHead } from "@vueuse/head";
 import { useI18n } from "vue-i18n";
+import { useGtag } from "vue-gtag-next";
+import { useHead } from "@vueuse/head";
 
 import BlockContainer from "@/components/BlockContainer";
 import HeaderContainer from "@/components/HeaderContainer";
@@ -14,6 +15,7 @@ import { storageService } from "@/services";
 import LanguageSelector from "@/components/LanguageSelector";
 
 const { t, locale, availableLocales } = useI18n();
+const { pageview } = useGtag() 
 const lang = storageService.load("lang");
 
 const projects = computed(() => {
@@ -28,6 +30,8 @@ if (lang && availableLocales.includes(lang)) {
 useHead({
   title: t("home.head.title"),
 });
+
+pageview({})
 </script>
 
 <template>
