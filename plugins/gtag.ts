@@ -1,6 +1,5 @@
 import VueGtag from "vue-gtag-next";
-
-const GTAG = import.meta.env.VITE_GTAG?.toString();
+import { GTAG } from "@/env";
 
 export default defineNuxtPlugin(({ vueApp }) => {
   if (GTAG) vueApp.use(VueGtag, { property: { id: GTAG ? GTAG : "" } });
