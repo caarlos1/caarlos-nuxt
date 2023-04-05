@@ -37,6 +37,10 @@
 .thecard__taglist {
   .taglist__item {
     @apply inline-block text-color-text bg-color-primary p-1 px-3 m-1 rounded-md text-sm;
+
+    &.is-url {
+      @apply hover:bg-color-primary-2;
+    }
   }
 }
 
