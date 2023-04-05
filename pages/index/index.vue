@@ -3,6 +3,8 @@ import { useI18n } from "vue-i18n";
 import { useGtag } from "vue-gtag-next";
 import { useHead } from "@vueuse/head";
 
+import { GTAG } from "@/env";
+
 import BlockContainer from "@/components/BlockContainer";
 import HeaderContainer from "@/components/HeaderContainer";
 import TheCard from "@/components/TheCard";
@@ -15,7 +17,7 @@ import { storageService } from "@/services";
 import LanguageSelector from "@/components/LanguageSelector";
 
 const { t, locale, availableLocales } = useI18n();
-const { pageview } = useGtag() 
+const { pageview } = useGtag()
 const lang = storageService.load("lang");
 
 const projects = computed(() => {
@@ -31,7 +33,7 @@ useHead({
   title: t("home.head.title"),
 });
 
-pageview({})
+if(GTAG) pageview({})
 </script>
 
 <template>

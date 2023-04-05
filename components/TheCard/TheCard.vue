@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { LaImage } from "oh-vue-icons/icons";
+import { LaImage, LaLinkSolid } from "oh-vue-icons/icons";
 import { TheCardTag } from "./types";
 
 export interface TheCardProps {
@@ -19,7 +19,7 @@ withDefaults(defineProps<TheCardProps>(), {
   tags: () => [],
 });
 
-addIcons(LaImage);
+addIcons(LaImage, LaLinkSolid);
 
 const handleCardTag = (tag: TheCardTag) => {
   if (typeof tag == "string") {
@@ -46,12 +46,23 @@ const handleCardTag = (tag: TheCardTag) => {
 
       <div v-if="tags.length" class="thecard__taglist">
         <ul>
-          <li v-for="tag in tags" class="taglist__item">
+          <li
+            v-for="tag in tags"
+            class="taglist__item"
+            :class="{
+              'is-url': typeof tag !== 'string' && tag.url,
+            }"
+          >
             <a
               v-if="typeof tag !== 'string' && tag.url"
               :href="tag.url"
               target="_blank"
             >
+              <OhVueIcon
+                class="fill-color-text"
+                name="la-link-solid"
+                scale=".75"
+              />
               {{ handleCardTag(tag) }}
             </a>
             <span v-else>

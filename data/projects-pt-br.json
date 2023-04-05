@@ -11,7 +11,7 @@
       "Testing Library",
       "i18n",
       "SCSS",
-      "Github Actions"
+      { "label": "Github Actions", "url": "https://github.com/caarlos1/pomodoro-timer/actions" }
     ]
   },
   {
