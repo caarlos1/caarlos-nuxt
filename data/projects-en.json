@@ -2,6 +2,7 @@
   {
     "title": "Pomodoro Timer",
     "url": "https://timer.caarlos.com",
+    "icon": "la-clock",
     "description": "Tool developed in Vue.js aimed at assisting in my personal studies, based on the needs of the Pomodoro technique.",
     "tags": [
       "Vue.js 3",
@@ -11,19 +12,23 @@
       "Testing Library",
       "i18n",
       "SCSS",
-      { "label": "Github Actions", "url": "https://github.com/caarlos1/pomodoro-timer/actions" }
+      {
+        "label": "Github Actions",
+        "url": "https://github.com/caarlos1/pomodoro-timer/actions"
+      }
     ]
   },
   {
     "title": "Points Sheet Calculator",
     "url": "https://ponto.caarlos.com",
+    "icon": "la-calculator-solid",
     "description": "Tool developed as a study in React.js aimed at assisting in the calculation and prediction of a daily work schedule (CLT), creating a plan of entry and exit clock-ins and extra hours.",
     "tags": ["React.js", "TypeScript", "Tailwind", "Testing Library"]
   },
   {
-    "title": "This Page!",
+    "title": "Here.html",
     "url": "",
-    "image": "https://i.imgur.com/MnjlXZU.jpeg",
+    "icon": "la-smile-wink",
     "description": "Referring to the website you're currently on!",
     "tags": [
       "Vue.js 3",
