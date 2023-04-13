@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { LaImage, LaLinkSolid } from "oh-vue-icons/icons";
-import { TheCardTag } from "./types";
+import {
+  LaImage,
+  LaClock,
+  LaLinkSolid,
+  LaCalculatorSolid,
+  LaSmileWink,
+} from "oh-vue-icons/icons";
+import { IconsCard, TheCardTag } from "./types";
 
 export interface TheCardProps {
   title: string;
@@ -9,6 +15,7 @@ export interface TheCardProps {
   description?: string;
   image?: string;
   tags?: TheCardTag[];
+  icon: IconsCard;
 }
 
 withDefaults(defineProps<TheCardProps>(), {
@@ -17,9 +24,10 @@ withDefaults(defineProps<TheCardProps>(), {
   description: "",
   image: "",
   tags: () => [],
+  icon: "la-image",
 });
 
-addIcons(LaImage, LaLinkSolid);
+addIcons(LaImage, LaClock, LaLinkSolid, LaCalculatorSolid, LaSmileWink);
 
 const handleCardTag = (tag: TheCardTag) => {
   if (typeof tag == "string") {
@@ -33,7 +41,7 @@ const handleCardTag = (tag: TheCardTag) => {
 <template>
   <div class="thecard__shadow">
     <div class="thecard__container">
-      <OhVueIcon name="la-image" scale="5" class="thecard__icon" />
+      <OhVueIcon :name="icon" scale="5" class="thecard__icon" />
       <img v-if="image" :src="image" :alt="title" class="thecard__image" />
     </div>
 
