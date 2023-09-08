@@ -1,7 +1,7 @@
 [
   {
-    "title": "Pomodoro Timer",
-    "url": "https://timer.caarlos.com",
+    "title": "Pomodoro",
+    "url": "https://pomodoro.caarlos.com",
     "icon": "la-clock",
     "description": "Tool developed in Vue.js aimed at assisting in my personal studies, based on the needs of the Pomodoro technique.",
     "tags": [
