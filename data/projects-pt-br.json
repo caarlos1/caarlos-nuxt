@@ -15,6 +15,10 @@
       {
         "label": "Github Actions",
         "url": "https://github.com/ohcarlinhos/pomodoro/actions"
+      },
+      {
+        "label": "Github",
+        "url": "https://github.com/ohcarlinhos/pomodoro"
       }
     ]
   },
@@ -23,7 +27,16 @@
     "url": "https://ponto.caarlos.com",
     "icon": "la-calculator-solid",
     "description": "Ferramenta desenvolvida como um estudo em React.js visando auxiliar no cálculo e previsão de uma jornada diária (CLT), criando um planejamento de batidas de entradas e saídas e horas extra.",
-    "tags": ["React.js", "TypeScript", "Tailwind", "Testing Library"]
+    "tags": [
+      "React.js",
+      "TypeScript",
+      "Tailwind",
+      "Testing Library",
+      {
+        "label": "Github",
+        "url": "https://github.com/ohcarlinhos/calculadora-folha-de-pontos"
+      }
+    ]
   },
   {
     "title": "Aqui.html",
@@ -38,7 +51,11 @@
       "Vitest",
       "Testing Library",
       "i18n",
-      "Tailwind"
+      "Tailwind",
+      {
+        "label": "Github",
+        "url": "https://github.com/ohcarlinhos/caarlos-nuxt"
+      }
     ]
   }
 ]
