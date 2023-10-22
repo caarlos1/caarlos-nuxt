@@ -4,4 +4,5 @@ export type IconsCard =
   | "la-image"
   | "la-clock"
   | "la-calc-solid"
-  | "la-smile-wink";
+  | "la-smile-wink"
+  | "la-file-image";

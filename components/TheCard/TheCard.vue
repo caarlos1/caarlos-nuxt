@@ -6,6 +6,7 @@ import {
   LaLinkSolid,
   LaCalculatorSolid,
   LaSmileWink,
+  LaFileImage,
 } from "oh-vue-icons/icons";
 import { IconsCard, TheCardTag } from "./types";
 
@@ -27,7 +28,14 @@ withDefaults(defineProps<TheCardProps>(), {
   icon: "la-image",
 });
 
-addIcons(LaImage, LaClock, LaLinkSolid, LaCalculatorSolid, LaSmileWink);
+addIcons(
+  LaImage,
+  LaClock,
+  LaLinkSolid,
+  LaCalculatorSolid,
+  LaSmileWink,
+  LaFileImage
+);
 
 const handleCardTag = (tag: TheCardTag) => {
   if (typeof tag == "string") {
