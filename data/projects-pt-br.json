@@ -1,5 +1,37 @@
 [
   {
+    "title": "Img p/ Texto",
+    "url": "",
+    "icon": "la-file-image",
+    "description": "Microprojeto de API com interface para converter imagens com texto para texto.",
+    "tags": [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "Tesseract.js",
+      {
+        "label": "Github",
+        "url": "https://github.com/ohcarlinhos/img-to-text"
+      }
+    ]
+  },
+  {
+    "title": "Calculadora de Folha de Pontos",
+    "url": "https://ponto.caarlos.com",
+    "icon": "la-calculator-solid",
+    "description": "Ferramenta desenvolvida como um estudo em React.js visando auxiliar no cálculo e previsão de uma jornada diária (CLT), criando um planejamento de batidas de entradas e saídas e horas extra.",
+    "tags": [
+      "React.js",
+      "TypeScript",
+      "Tailwind",
+      "Testing Library",
+      {
+        "label": "Github",
+        "url": "https://github.com/ohcarlinhos/calculadora-folha-de-pontos"
+      }
+    ]
+  },
+  {
     "title": "Pomodoro",
     "url": "https://pomodoro.caarlos.com",
     "icon": "la-clock",
@@ -19,22 +51,6 @@
       {
         "label": "Github",
         "url": "https://github.com/ohcarlinhos/pomodoro"
-      }
-    ]
-  },
-  {
-    "title": "Calculadora de Folha de Pontos",
-    "url": "https://ponto.caarlos.com",
-    "icon": "la-calculator-solid",
-    "description": "Ferramenta desenvolvida como um estudo em React.js visando auxiliar no cálculo e previsão de uma jornada diária (CLT), criando um planejamento de batidas de entradas e saídas e horas extra.",
-    "tags": [
-      "React.js",
-      "TypeScript",
-      "Tailwind",
-      "Testing Library",
-      {
-        "label": "Github",
-        "url": "https://github.com/ohcarlinhos/calculadora-folha-de-pontos"
       }
     ]
   },
