@@ -15,7 +15,11 @@
 }
 
 .header__title {
-  @apply text-6xl leading-tight font-bold;
+  @apply max-sm:text-5xl text-6xl leading-tight font-bold;
+
+  .hi {
+    @apply sm:text-5xl text-3xl;
+  }
 }
 
 .header__desc {

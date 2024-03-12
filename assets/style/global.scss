@@ -18,10 +18,6 @@ a.hi {
   @apply hover:text-color-text transition-all;
 }
 
-.small-title {
-  @apply max-sm:text-4xl;
-}
-
 .desk-only {
   @apply max-sm:hidden;
 }

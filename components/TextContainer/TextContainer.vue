@@ -11,6 +11,7 @@ withDefaults(defineProps<TextBlockProps>(), {
 </script>
 
 <template>
+  <!-- TODO: remover v-html -->
   <div
     class="text__container"
     v-html="text"
