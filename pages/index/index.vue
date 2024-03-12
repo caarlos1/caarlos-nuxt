@@ -17,7 +17,7 @@ import { storageService } from "@/services";
 import LanguageSelector from "@/components/LanguageSelector";
 
 const { t, locale, availableLocales } = useI18n();
-const { pageview } = useGtag()
+const { pageview } = useGtag();
 const lang = storageService.load("lang");
 
 const projects = computed(() => {
@@ -33,7 +33,7 @@ useHead({
   title: t("home.head.title"),
 });
 
-if(GTAG) pageview({})
+if (GTAG) pageview({});
 </script>
 
 <template>
