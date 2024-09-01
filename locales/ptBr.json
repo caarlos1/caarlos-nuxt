@@ -1,9 +1,9 @@
 {
   "home": {
-    "head": { "title": "Carlos Júnior - FullStack Developer" },
-    "title": "Carlos Júnior<=>->type:br<=>FullStack Developer->class:hi",
+    "head": { "title": "Carlos Roberto - FullStack Developer" },
+    "title": "Carlos Roberto <=>->type:br<=>FullStack Developer->class:hi",
     "description": "De <a href=\"https://pt.wikipedia.org/wiki/Minas_Gerais\" target=\"_blank\">Minas Gerais</a> até onde houver queijo! 🧀",
-    "footer": "Página desenvolvida por Carlos Júnior. Entre em contato <a href=\"https://www.linkedin.com/in/carlos-roberto\" class=\"hi\" target=\"_blank\">clicando aqui!</a>",
+    "footer": "Página desenvolvida por Carlos Roberto. Entre em contato <a href=\"https://www.linkedin.com/in/carlos-roberto\" class=\"hi\" target=\"_blank\">clicando aqui!</a>",
     "projects": {
       "title": "Projetos",
       "description": "Ferramentas pessoais desenvolvidos para o mundo!"

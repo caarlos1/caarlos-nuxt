@@ -1,18 +1,18 @@
 [
   {
-    "title": "Img p/ Texto",
-    "url": "",
-    "icon": "la-file-image",
-    "description": "Microprojeto de API com interface para converter imagens com texto para texto.",
+    "title": "Registra meu tempo aí",
+    "url": "https://registrameutempoai.com.br",
+    "icon": "la-clock",
+    "description": "Ferramenta de gerenciamento de tempo, com objetivo de persistir e criar relatórios de tempo gasto em tarefas, estudos e trabalhos freelancer.",
     "tags": [
-      "Node.js",
-      "Express.js",
+      "C#",
+      "Entity Framework",
+      "ASP.NET",
+      "Postgres",
+      "Blazor",
+      "Nuxt.js",
       "TypeScript",
-      "Tesseract.js",
-      {
-        "label": "Github",
-        "url": "https://github.com/ohcarlinhos/img-to-text"
-      }
+      "Tailwind"
     ]
   },
   {
